@@ -79,7 +79,7 @@ app.post('/api/articles/:name/add-comment', (req, res) => {
   }, res)
 })
 
-app.get('*', (req, res) => {
+app.get('/my-blog-webpack/*', (req, res) => {
   res.send(path.join(__dirname + '/dist/index.html'))
 })
 
